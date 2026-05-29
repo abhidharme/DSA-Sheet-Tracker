@@ -49,10 +49,10 @@ cd backend
 cp .env.example .env
 npm install
 npm run seed
-npm run dev
+npm start
 ```
 
-`npm run dev` uses **nodemon** to auto-restart the server when files in `backend/src` change.
+`npm start` runs the server with **nodemon** (auto-restart on code changes). For production without nodemon, use `npm run start:prod`.
 
 ### 2) Frontend
 
