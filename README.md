@@ -52,6 +52,8 @@ npm run seed
 npm run dev
 ```
 
+`npm run dev` uses **nodemon** to auto-restart the server when files in `backend/src` change.
+
 ### 2) Frontend
 
 ```bash
@@ -71,5 +73,6 @@ npm run dev
 
 ## Notes
 
-- Make sure local MongoDB is running before seeding or starting backend.
+- Set `MONGO_URI` in `backend/.env` using your Atlas URI, for example:
+  `mongodb+srv://abhijeet:<db_password>@cluster0.3ptdh38.mongodb.net/dsa-sheet-tracker?retryWrites=true&w=majority&appName=Cluster0`
 - Seed script inserts sample topics and problems for all requested DSA sections.
